@@ -1,13 +1,21 @@
-/* HEADER */
-/* a {
+a {
+  font-weight: bold;
   text-decoration: none;
   color: white;
-} */
+  margin: 0 10px;
+}
 
 ul {
   list-style: none;
   color: white;
 }
+
+/* Generics */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* HEADER */
+
 .header-main {
   background-color: orange;
   color: white;
@@ -17,25 +25,17 @@ ul {
   width: 100%;
   z-index: 1;
 }
+
 .header-head {
   display: flex;
   align-items: center;
   min-height: 60px;
   background-color: #FF6801;
-  
-  
 }
 
 .header-head ul li {
   display: inline-block;
-  padding-left: 5px;
-}
-
-.header-head ul li a {
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  margin: 0 10px;
+  padding-left: 0 5px;
 }
 
 .header-nav {
@@ -47,17 +47,18 @@ ul {
   display: flex;
 	flex-grow: 1;
 	align-items: center;
-	justify-content: flex-start;
+  cursor: pointer;
 }
-
+/* 
 .header-head ul li a:hover {
   text-decoration: underline;
-}
+} */
 
 .logo {
   height: 1.8rem;
   vertical-align: middle;
   text-align: center;
+  cursor: pointer;
 }
 
 .header-icons {
@@ -66,13 +67,13 @@ ul {
 	align-items: center;
   justify-content: flex-end;
   margin: 0 10px;
-}
-
-.header-head ul li i {
   font-weight: bold;
   font-size: 1.1rem;
   color: white;
+  cursor: pointer;
 }
+
+/*MAIN */
 
 main {
   margin-top: 100px;
@@ -104,8 +105,10 @@ main .row > div {
   background-color: white;
   font-size: 2rem;
   text-align: center;
-  
+  cursor: pointer;
 } 
+
+
 .favorite-container > span {
   display: inline;
   background-color: white;
@@ -116,10 +119,10 @@ main .row > div {
   color: red;
 }
 
-
 .tags-container {
   position: relative;
 }
+
 .tags-container > .sale{
   position: absolute;
   bottom: 50px;
@@ -128,6 +131,7 @@ main .row > div {
   padding: 3px 10px;
   font-size: .8rem;
 }
+
 .tags-container > .discount{
   position: absolute;
   bottom: 50px;
@@ -136,12 +140,12 @@ main .row > div {
   color: white;
   font-size: .8rem;
   padding: 3px 10px;
-  
 }
 
 .col img.img-sec {
   display: none;
 }
+
 .col:hover img.img-main {
   display: none;
 }
@@ -158,6 +162,7 @@ main .row > div {
   font-weight: 600;
   text-transform: uppercase
 }
+
 .current-price {
   color: red;
   font-weight: bold;
@@ -168,3 +173,43 @@ main .row > div {
   font-size: .8rem;
   text-decoration: line-through;
 }
+/* FOOTER */
+
+.footer-container {
+  max-width: 1200px;
+  background-color: #1A1A1A;
+  color: white;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  border-bottom: 2px solid white;
+}
+
+.footer-container ul li {
+  display: inline;
+} 
+
+.footer-right {
+  text-align: left;
+}
+.footer-right .footer-privasy ul {
+font-size: .8rem;
+}
+
+.footer-left{
+  text-align: right;
+  padding: 10px
+
+}
+
+.footer-left a{
+  margin: 0 2px;
+}
+
+.footer-container h6 {
+  font-size: .9rem;
+  margin: 10px 0 10px 10px;
+}
+
